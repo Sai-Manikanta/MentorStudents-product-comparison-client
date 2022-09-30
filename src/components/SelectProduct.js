@@ -1,6 +1,6 @@
 function SelectProduct({ products, selectedProductID }) {
     return (
-        <select name="cars" id="cars" className="p-2" onChange={e => selectedProductID(e.target.value)}>
+        <select name="cars" id="cars" className="p-2 border rounded" onChange={e => selectedProductID(e.target.value)}>
             <option value="select">Select Product</option>
             {products.map(product => (
                 <option key={product._id} value={product._id}>
